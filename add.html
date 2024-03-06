@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Black Screen with Random Images Grid</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: black;
+            padding: 10px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            margin: 0;
+            padding: 15px 0;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            display: block;
+        }
+
+        .vertical-line {
+            width: 2px;
+            height: 100vh;
+            background-color: white;
+            position: absolute;
+            left: 170px;
+            top: 0;
+            bottom: 0;
+        }
+
+        .black-screen {
+            height: 50%;
+            background-color: black;
+        }
+        .line {
+            Background-color:black;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 5px;
+            height: 50%;
+            padding: 10px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .vertical-button {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .bottom-navigation {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .bottom-navigation h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bottom-navigation a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="black-screen"></div>
+    <div class="line">+</div>
+
+    <div class="image-grid">
+        <img src="https://source.unsplash.com/random/1" alt="Image 1">
+        <img src="https://source.unsplash.com/random/2" alt="Image 2">
+        <img src="https://source.unsplash.com/random/3" alt="Image 3">
+        <img src="https://source.unsplash.com/random/4" alt="Image 4">
+        <img src="https://source.unsplash.com/random/5" alt="Image 5">
+        <img src="https://source.unsplash.com/random/6" alt="Image 6">
+        <img src="https://source.unsplash.com/random/7" alt="Image 7">
+        <img src="https://source.unsplash.com/random/8" alt="Image 8">
+        <img src="https://source.unsplash.com/random/9" alt="Image 9">
+        <img src="https://source.unsplash.com/random/10" alt="Image 10">
+        <img src="https://source.unsplash.com/random/11" alt="Image 11">
+        <img src="https://source.unsplash.com/random/12" alt="Image 12">
+        <img src="https://source.unsplash.com/random/13" alt="Image 13">
+        <img src="https://source.unsplash.com/random/14" alt="Image 14">
+        <img src="https://source.unsplash.com/random/15" alt="Image 15">
+        <img src="https://source.unsplash.com/random/16" alt="Image 16">
+        <img src="https://source.unsplash.com/random/17" alt="Image 17">
+        <img src="https://source.unsplash.com/random/18" alt="Image 18">
+        <img src="https://source.unsplash.com/random/19" alt="Image 19">
+        <img src="https://source.unsplash.com/random/20" alt="Image 20">
+    </div>
+    <div class="bottom-navigation">
+   
+        <div class="horizontal-line"></div>
+        <a href="Login.html"> &#127968; Home</a>
+        <a href="Tab.html"> &#128269; Search</a>
+        <a href="Bar.html"> &#128269; Explore</a>
+        <a href="add.html"> + Create</a>
+        <a href="reel.html"> &#127909; Reel</a>
+        <a href="Message.html"> &#128241; Message</a>
+        <a href="user.html"> &#128100; Profile</a>
+    </div>
+
+</body>
+</html>

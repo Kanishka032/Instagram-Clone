@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bottom-navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: black;
+            padding: 10px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .bottom-navigation h1 {
+            margin: 0;
+            padding: 15px 0;
+        }
+
+        .bottom-navigation a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 170px;
+            width: 2px;
+            background-color: white;
+        }
+
+        .horizontal-line {
+            width: 100%;
+            border-top: 2px solid white;
+        }
+
+        .suggestion-box {
+            position: absolute;
+            right: 20px;
+            top: 90px;
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .suggested-account {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .suggested-account img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .suggested-account-info {
+            flex-grow: 1;
+        }
+
+        .suggested-account-name {
+            font-size: 18px;
+        }
+
+        .suggested-account-handle {
+            font-size: 14px;
+            color: gray;
+  
+}
+.container2 {
+    position: absolute;
+    top: 50px; /* Adjust the top position to place it below the horizontal line */
+    left: 170px;
+    width: calc(100% - 170px);
+    padding: 10px;
+    color: white;
+}
+
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px; 
+}
+
+.status .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h3 {
+    font-size: 20px;
+color:white;
+}
+
+span {
+    font-size: 16px;
+}
+
+.line {
+    width: 80px;
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.post img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.options {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    margin-top: 10px;
+    margin-left: 30px; /* Add 30px distance from the left */
+}
+
+.options > div {
+    margin: 0 5px;
+}
+
+.options > div > span {
+    font-size: 14px;
+}
+
+
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comment-list .comment {
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3px;
+}
+
+.comment-form input {
+    width: 40%;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.comment-form button {
+    padding: 3px 8px;
+    font-size: 14px;
+}
+.statuses {
+    position: absolute;
+    top: 0; /* Adjust the top position to place it above the horizontal line */
+    left: 170px;
+    width: calc(100% - 170px);
+    padding: 10px;
+    color: white;
+
+}
+
+.status2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.status2 .image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+ border: 2px solid red;
+}
+
+.status2 .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+    <div class="bottom-navigation">
+        <h1>Instagram</h1>
+
+        <div class="horizontal-line"></div>
+        <a href="Login.html"> &#127968; Home</a>
+        <a href="Tab.html"> &#128269; Search</a>
+        <a href="Bar.html"> &#128269; Explore</a>
+        <a href="add.html"> + Create</a>
+        <a href="reel.html"> &#127909; Reel</a>
+        <a href="Message.html"> &#128241; Message</a>
+       
+        <a href="user.html"> &#128100; Profile</a>
+    </div>
+    <div class="container"></div>
+    <div class="suggestion-box">
+<h6>Suggestion for You</h6>
+        <div class="suggested-account">
+            <img src="https://source.unsplash.com/random/1" alt="Image 1">
+            <div class="suggested-account-info">
+                <div class="suggested-account-name">Kanishka Gupta</div>
+                <div class="suggested-account-handle">@kanishka12324</div>
+            </div>
+        </div>
+
+        <div class="suggested-account">
+            <img src="https://source.unsplash.com/random/2" alt="Image 2">
+            <div class="suggested-account-info">
+                <div class="suggested-account-name">Kanikaa Gupta</div>
+                <div class="suggested-account-handle">@kanika4327413</div>
+            </div>
+        </div>
+ <div class="suggested-account">
+          <img src="https://source.unsplash.com/random/3" alt="Image 1">
+            <div class="suggested-account-info">
+                <div class="suggested-account-name">Rishi Seth</div>
+                <div class="suggested-account-handle">@rishi8973</div>
+            </div>
+        </div>
+
+        <div class="suggested-account">
+           <img src="https://source.unsplash.com/random/4" alt="Image 1">
+            <div class="suggested-account-info">
+                <div class="suggested-account-name">harsh Kumar</div>
+                <div class="suggested-account-handle">@harsht897324023</div>
+            </div>
+        </div> <div class="suggested-account">
+           <img src="https://source.unsplash.com/random/5" alt="Image 1">
+            <div class="suggested-account-info">
+                <div class="suggested-account-name">sarthak Sivasatava</div>
+                <div class="suggested-account-handle">@sarthakkkk09880</div>
+            </div>
+        </div>
+
+        <div class="suggested-account">
+           <img src="https://source.unsplash.com/random/6" alt="Image 1">
+            <div class="suggested-account-info">
+                <div class="suggested-account-name">Tisha Gupta</div>
+                <div class="suggested-account-handle">@Tisha76329</div>
+            </div>
+        </div>
+        <div class="suggested-account">
+        <img src="https://source.unsplash.com/random/7" alt="Image 1">
+            <div class="suggested-account-info">
+                <div class="suggested-account-name">Rishi Seth</div>
+                <div class="suggested-account-handle">@rishi8973</div>
+            </div>
+        </div>
+    </div>
+<div class="container2">
+        <div class="status">
+            <div class="image">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2024-01-30 at 11.34.59_579c8697.jpg" alt="User Image">
+            </div>
+            <h3>Kanishka Gupta
+                <br>
+                <span>Delhi, India &#128269;</span>
+            </h3>
+        </div>
+        <div class="line"></div>
+        <div class="post">
+           <img src="https://source.unsplash.com/random/5" alt="Image 1">
+        </div>
+        <div class="line"></div>
+        <div class="options">
+            <div class="likes">
+                <span>&#x2764; 120 Likes</span>
+            </div>
+            <div class="comments">
+                <span>&#128172; 50 Comments</span>
+            </div>
+            <div class="shares">
+                <span>&#128279; 30 Shares</span>
+            </div>
+        </div>
+ <div class="comment-section">
+        <h4>Comments</h4>
+        <div class="comment-list">
+           
+        </div>
+        <div class="comment-form">
+            <input type="text" placeholder="Write your comment...">
+            <button>Post</button>
+        </div>
+    </div>
+
+</div>
+<div class="statuses">
+                    <div class="status2">
+ <a href="status1.html">
+                        <div class="image">
+ 
+  <img src="https://source.unsplash.com/random/6" alt="Image 1">
+</a>
+                        </div>
+                    </div>
+<div class="statuses">
+                    <div class="status2">
+ <a href="status1.html">
+                        <div class="image">
+ 
+  <img src="https://source.unsplash.com/random/11" alt="Image 1">
+</a>
+                        </div>
+                    </div>
+
+<div class="statuses">
+                    <div class="status2">
+ <a href="status1.html">
+                        <div class="image">
+ 
+  <img src="https://source.unsplash.com/random/10" alt="Image 1">
+</a>
+                        </div>
+                    </div>
+
+<div class="statuses">
+                    <div class="status2">
+ <a href="status1.html">
+                        <div class="image">
+ 
+  <img src="https://source.unsplash.com/random/9" alt="Image 1">
+</a>
+                        </div>
+                    </div>
+
+<div class="statuses">
+                    <div class="status2">
+ <a href="status1.html">
+                        <div class="image">
+ 
+  <img src="https://source.unsplash.com/random/8" alt="Image 1">
+</a>
+                        </div>
+                    </div>
+
+<div class="statuses">
+                    <div class="status2">
+ <a href="status1.html">
+                        <div class="image">
+ 
+  <img src="https://source.unsplash.com/random/7" alt="Image 1">
+</a>
+                        </div>
+                    </div>
+
+
+</div>
+</body>
+</html>

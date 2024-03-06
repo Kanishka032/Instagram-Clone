@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-info img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px; /* Adjust profile picture size */
+            height: 100px; /* Adjust profile picture size */
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        .post-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .post img {
+            width: 100%; /* Make the post image responsive */
+            height: 200px; /* Adjust post image height */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .interaction-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .interaction-buttons button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black; 
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottom-navigation a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 20px; 
+}
+.settings {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.dropbtn {
+    background-color: transparent;
+    color: Black;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="container">
+   <div class="settings">
+    <div class="dropdown">
+        <button class="dropbtn">⚙️ Settings</button>
+        <div class="dropdown-content">
+            <a href="#">Archieve</a>
+            <a href="#">Likes </a>
+            <a href="#">Privacy </a>
+<a href="#">saved Info </a>
+<a href="#">Blocked </a>
+<a href="Insta2.html">Switch acount </a>
+        </div>
+    </div>
+</div>
+
+   
+        <div class="profile-info">
+            <img src="https://source.unsplash.com/random/1" alt="Profile Picture">
+            <div>
+                <h1>Kanishka</h1>
+                <p>Followers: 1000</p>
+                <p>Following: 500</p>
+                <p>Posts: 5</p>
+                <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="post-container">
+            <!-- Posts with adjusted image size -->
+            <div class="post">
+                <img src="https://source.unsplash.com/random/2" alt="Image 2">
+                <div class="interaction-buttons">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://source.unsplash.com/random/3" alt="Image 3">
+                <div class="interaction-buttons">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://source.unsplash.com/random/4" alt="Image 4">
+                <div class="interaction-buttons">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://source.unsplash.com/random/5" alt="Image 5">
+                <div class="interaction-buttons">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://source.unsplash.com/random/6" alt="Image 6">
+                <div class="interaction-buttons">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="bottom-navigation">
+   
+        <div class="horizontal-line"></div>
+        <a href="Login.html"> &#127968; Home</a>
+        <a href="Tab.html"> &#128269; Search</a>
+        <a href="Bar.html"> &#128269; Explore</a>
+        <a href="add.html"> + Create</a>
+        <a href="reel.html"> &#127909; Reel</a>
+        <a href="Message.html"> &#128241; Message</a>
+        <a href="user.html"> &#128100; Profile</a>
+    </div>
+</body>
+</html>

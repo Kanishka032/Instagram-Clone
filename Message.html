@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Message Inbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: Black;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #f3f3f3;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #262626;
+        }
+
+        .messages {
+            padding:10px;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .message img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .message-info {
+            flex: 1;
+        }
+
+        .message-info h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #262626;
+        }
+
+        .message-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .message-content {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .message-content p:last-child {
+            margin-bottom: 0;
+        }
+.bottom-navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: black;
+            padding: 10px;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .bottom-navigation h1 {
+            margin: 0;
+            padding: 15px ;
+        }
+
+        .bottom-navigation a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+ .vertical-line {
+            width: 2px;
+            height: 1000000px;
+            background-color: white;
+            position: absolute;
+            left: 190px;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+  <div class="bottom-navigation">
+        <h1>Instagram</h1>
+        <div class="horizontal-line"></div>
+        <a href="Login.html"> &#127968; Home</a>
+        <a href="Tab.html"> &#128269; Search</a>
+        <a href="Bar.html"> &#128269; Explore</a>
+        <a href="add.html"> + Create</a>
+        <a href="reel.html"> &#127909; Reel</a>
+        <a href="Message.html"> &#128241; Message</a>
+     
+        <a href="user.html"> &#128100; Profile</a>
+    </div>
+
+  <div class="vertical-line"></div>
+    <div class="container">
+        <div class="header">
+            <h1>Message Inbox</h1>
+        </div>
+        <div class="messages">
+            <div class="message">
+                <img src="https://source.unsplash.com/random/7" alt="Profile Pic">
+                <div class="message-info">
+                    <h2>Rishi Seth</h2>
+                    <p>Sent 2 hours ago</p>
+                </div>
+                <div class="message-content">
+                    <p>Hey, how's it going?</p>
+                </div>
+            </div>
+            <div class="message">
+           <img src="https://source.unsplash.com/random/6" alt="Profile Pic">
+                <div class="message-info">
+                    <h2>Kanika</h2>
+                    <p>Sent 5 hours ago</p>
+                </div>
+                <div class="message-content">
+                    <p>Did you get the email I sent earlier?</p>
+                </div>
+            </div>
+           <div class="message">
+               <img src="https://source.unsplash.com/random/5" alt="Profile Pic">
+                <div class="message-info">
+                    <h2>Sarthak</h2>
+                    <p>Sent 2 hours ago</p>
+                </div>
+                <div class="message-content">
+                    <p>Hey, how's it going?</p>
+                </div>
+            </div>
+            <div class="message">
+               <img src="https://source.unsplash.com/random/4" alt="Profile Pic">
+                <div class="message-info">
+                    <h2>Tisha</h2>
+                    <p>Sent 5 hours ago</p>
+                </div>
+                <div class="message-content">
+                    <p>sent you a reel</p>
+                </div>
+            </div>
+<div class="message">
+               <img src="https://source.unsplash.com/random/3" alt="Profile Pic">
+                <div class="message-info">
+                    <h2>KAnishka</h2>
+                    <p>Sent 2 hours ago</p>
+                </div>
+                <div class="message-content">
+                    <p>Hey, how's it going?</p>
+                </div>
+            </div>
+            <div class="message">
+                <img src="https://source.unsplash.com/random/2" alt="Profile Pic">
+                <div class="message-info">
+                    <h2>Kanika </h2>
+                    <p>Sent 5 hours ago</p>
+                </div>
+                <div class="message-content">
+                    <p>Did you get the email I sent earlier?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
